@@ -13,6 +13,8 @@
     "precommit": "npm run lint",
     "ship-production": "shipit production deploy"
   },
+  "repository": "https://github.com/RichAyotte/ayottesoftware-website.git",
+  "license": "MIT",
   "dependencies": {
     "config": "^3.0.1",
     "cross-env": "^5.2.0",
