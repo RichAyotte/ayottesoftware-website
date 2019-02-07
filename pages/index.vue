@@ -4,9 +4,7 @@
 	<div>
 		<img
 			class="headshot"
-			height="200"
 			src="~assets/headshot.jpg"
-			width="200"
 		/>
 		<h1 class="title">Richard Ayotte</h1>
 		<h2 class="subtitle">Full Stack Developer</h2>
@@ -32,11 +30,13 @@
 		, `Vue.js`
 		, `GraphQL`
 		, `SQL`
+		, `Koa`
+		, `Sequelize`
 	</strong>]
 	, brushes: [<strong>
 		`Debian GNU/Linux`
 		, `Git`
-		, `Intern`
+		, `Jest`
 		, `Sublime Text`
 	</strong>]
 	, surfaces: [<strong>
@@ -80,7 +80,9 @@
 	box-shadow 10px 10px 5px 0px rgba(0,0,0,0.2)
 	display block
 	margin 25px auto
+	max-width 300px
 	transform rotate(-8deg)
+	width 60%
 
 .title
 	font-family 'Gnuolane'
