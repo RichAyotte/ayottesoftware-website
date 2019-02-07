@@ -1,5 +1,33 @@
+/**
+ * @overview    Nuxt config
+ * @author      Richard Ayotte
+ * @copyright   Copyright © 2019 Richard Ayotte
+ * @date        2018-11-05 08:00:06
+ * @license     MIT License
+ */
+
+const imageminMozjpeg = require('imagemin-mozjpeg')
+const ImageminPlugin = require('imagemin-webpack-plugin').default
 const rucksackCss = require('rucksack-css')
 const pkg = require('./package')
+
+const getBuildPlugins = () => {
+	if (process.env.NODE_ENV !== 'production') {
+		return []
+	}
+
+	return [
+		new ImageminPlugin({
+			plugins: [
+				imageminMozjpeg({
+					quality: 75
+					, progressive: false
+				})
+			]
+			, test: /\.(jpg|svg)$/
+		})
+	]
+}
 
 module.exports = {
 	mode: 'universal'
@@ -110,6 +138,7 @@ module.exports = {
 				})
 			}
 		}
+		, plugins: getBuildPlugins()
 		, parallel: true
 		, postcss: [
 			rucksackCss
