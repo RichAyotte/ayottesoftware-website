@@ -105,23 +105,24 @@
 	clear both
 
 .links
-	margin 15px
+	margin 15px 0
 	a
 		border-radius 5px
 		display inline-block
+		font-size responsive 15px 20px
 		margin 5px
 
 .card
 	background-color brand-orange
 	border 5px solid darken(brand-orange, 20%)
 	border-radius 5px
-	color lighten(brand-orange, 50)
+	color white
 	display block
-	font-size responsive 12px 16px
-	margin 15px 0
+	font-size responsive 15px 17px
+	font-weight bold
+	margin 15px
 	padding 20px
 	tab-size 4
 	text-align left
-	strong
-		text-shadow 2px 2px 4px rgba(0,0,0,0.4)
+	text-shadow 2px 2px 4px rgba(0,0,0,0.6)
 </style>
