@@ -80,6 +80,9 @@ dist
 # IDE
 .idea
 
+# PWA
+sw.*
+
 # Ignore the all config except default
 config/*
 !config/default.js
