@@ -43,7 +43,7 @@ module.exports = {
 	 * @type {Object}
 	 */
 	, icon: {
-		iconSrc: 'static/power-button.svg'
+		iconSrc: 'assets/power-button 971x971.png'
 	}
 
 	/*

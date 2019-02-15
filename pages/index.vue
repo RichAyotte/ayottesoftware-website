@@ -1,10 +1,15 @@
 <template functional>
 <section class="container">
-	<img class="background" src="~assets/ayotte-software-logo-greyscale-rotated90.svg"/>
+	<img
+		class="background"
+		src="~assets/ayotte-software-logo-greyscale-rotated90.svg"
+		alt="Ayotte Software vertical logo"
+	/>
 	<div>
 		<img
 			class="headshot"
 			src="~assets/headshot.jpg"
+			alt="Photo of Richard Ayotte"
 		/>
 		<h1 class="title">Richard Ayotte</h1>
 		<h2 class="subtitle">Full Stack Developer</h2>
