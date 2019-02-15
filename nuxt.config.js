@@ -81,6 +81,16 @@ module.exports = {
 		'@nuxtjs/pwa'
 	]
 
+	/**
+	 * Manifest
+	 * @type {Object}
+	 */
+	, manifest: {
+		name: 'Richard Ayotte Full Stack Software Engineer'
+		// eslint-disable-next-line
+		, short_name: 'Richard Ayotte'
+	}
+
 	/*
 	 ** Build configuration
 	 */
