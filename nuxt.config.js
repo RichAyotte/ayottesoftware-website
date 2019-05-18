@@ -111,8 +111,10 @@ module.exports = {
 		}
 		, plugins: getBuildPlugins()
 		, parallel: true
-		, postcss: [
-			rucksackCss
-		]
+		, postcss: {
+			plugins: [
+				rucksackCss
+			]
+		}
 	}
 }
